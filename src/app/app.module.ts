@@ -8,6 +8,8 @@ import { BorderComponent } from './component/border/border.component';
 import { LogoComponent } from './component/logo/logo.component';
 import { MainCardComponent } from './component/cards/main-card/main-card.component';
 import { PaletteService } from './services/palette.service';
+import { ProjectCardComponent } from './component/cards/project-card/project-card.component';
+import { SkillCardComponent } from './component/cards/skill-card/skill-card.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +18,8 @@ import { PaletteService } from './services/palette.service';
     BorderComponent,
     LogoComponent,
     MainCardComponent,
+    ProjectCardComponent,
+    SkillCardComponent,
   ],
   imports: [
     BrowserModule,

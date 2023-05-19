@@ -1,0 +1,6 @@
+<h1 class="text-4xl w-fit mb-5" [style.background]="bg" [style.-webkit-background-clip]="'text'"
+    [style.-webkit-text-fill-color]="'transparent'">Projects</h1>
+<div class="grid grid-cols-1 gap-3 px-3">
+    <a [href]="project.url" *ngFor="let project of projects" class="font-thin w-fit hover:scale-105 hover:border-b-2"
+        [style.border-image-slice]="'1'" [style.border-image-source]="bg">{{project.name}}</a>
+</div>
