@@ -6,7 +6,7 @@ import { PaletteService } from 'src/app/services/palette.service';
   templateUrl: './skill-card.component.html',
 })
 export class SkillCardComponent {
-  skills = ["Typescript", "Go", "Java", "HTML / CSS", "Angular", "Express", "NodeJS", "Docker", "Postgre", "Git", "WSL"]
+  skills = ["Typescript", "Go", "Java", "HTML / CSS", "Angular", "Express", "NodeJS", "Docker", "Postgre", "Git", "WSL", "DevOps"]
 
   bg = "linear-gradient(135deg, #3d7c98, #a8dff1)"
   constructor(private paletteService: PaletteService) {
