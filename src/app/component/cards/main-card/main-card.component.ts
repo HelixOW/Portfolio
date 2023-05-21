@@ -6,14 +6,15 @@ import { PaletteService } from 'src/app/services/palette.service';
   templateUrl: './main-card.component.html',
 })
 export class MainCardComponent {
-  bg = "linear-gradient(135deg, #3d7c98, #a8dff1)"
+  bg = "linear-gradient(45deg, #3d7c98, #a8dff1)"
 
   constructor(private paletteService: PaletteService) {
   }
 
   ngOnInit() {
     this.paletteService.selectedPalette$.subscribe(palette => {
-      this.bg = `radial-gradient(circle, ${palette[0]}, ${palette[1]})`;
+      const colors = palette.colors.map(color => `${color.color} ${color.percent}%`);
+      this.bg = `linear-gradient(${palette.angle}, ${colors.join(', ')})`;
     });
   }
 }

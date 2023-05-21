@@ -1,11 +1,11 @@
 <div class="container mx-auto min-h-screen h-full w-full relative grid place-items-center">
     <svg-border class="absolute w-full h-full -z-10"></svg-border>
-    <div class="grid place-items-center grid-cols-1 p-20">
+    <div class="grid place-items-center grid-cols-1 p-8 h-full">
         <nav class="w-full grid place-items-center grid-cols-12">
             <svg-logo class="col-span-10 place-self-start"></svg-logo>
             <div class="col-span-2 grid grid-cols-2 gap-5 place-items-center">
                 <a aria-label="github" data-inlinesvg=".inlineSvgFile-7" href="https://github.com/HelixOW/"
-                    class="hover:scale-110 w-7 h-7 grid place-items-center">
+                    class="hover:scale-110 w-10 h-10 grid place-items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120.78 117.79" class="text-white">
                         <g id="Layer_2" data-name="Layer 2">
                             <g id="Layer_1-2" data-name="Layer 1">
@@ -19,7 +19,7 @@
                         </g>
                     </svg></a>
                 <a aria-label="email" data-inlinesvg=".inlineSvgFile-5"
-                    class="hover:scale-110 w-7 h-7 grid place-items-center"
+                    class="hover:scale-110 w-10 h-10 grid place-items-center"
                     href="mailto:helixow@duck.com?subject=Mail from HelixOW.dev"><svg version="1.0"
                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 643 465" class="">
                         <path class="fill-gray-100"
@@ -28,14 +28,14 @@
                     </svg></a>
             </div>
         </nav>
-        <div class="row-span-1 grid grid-cols-1 md:grid-cols-2 place-items-center gap-y-10 px-5">
-            <div class="col-span-1 md:col-span-2">
-                <main-card></main-card>
+        <div class="row-span-1 grid grid-cols-1 sm:grid-cols-2 lg:place-items-center gap-y-10 overflow-auto">
+            <div class="col-span-1 sm:col-span-2">
+                <main-card class="overflow-ellipsis"></main-card>
             </div>
-            <div class="col-span-1">
+            <div class="col-span-1 px-5">
                 <project-card></project-card>
             </div>
-            <div class="col-span-1 w-fit">
+            <div class="col-span-1 px-5 w-fit">
                 <skill-card></skill-card>
             </div>
         </div>

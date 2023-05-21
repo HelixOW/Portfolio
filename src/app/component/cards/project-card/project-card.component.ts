@@ -20,7 +20,8 @@ export class ProjectCardComponent {
 
   ngOnInit() {
     this.paletteService.selectedPalette$.subscribe(palette => {
-      this.bg = `radial-gradient(circle, ${palette[0]}, ${palette[1]})`;
+      const colors = palette.colors.map(color => `${color.color} ${color.percent}%`);
+      this.bg = `linear-gradient(${palette.angle}, ${colors.join(', ')})`;
     });
   }
 }
