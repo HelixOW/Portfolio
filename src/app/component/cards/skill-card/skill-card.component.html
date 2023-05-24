@@ -1,5 +1,4 @@
-<h1 class="text-4xl w-fit mb-5" [style.background]="bg" [style.-webkit-background-clip]="'text'"
+<h1 class="text-4xl mb-5 text-center" [style.background]="bg" [style.-webkit-background-clip]="'text'"
     [style.-webkit-text-fill-color]="'transparent'">Skills</h1>
-<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1 px-3">
-    <p *ngFor="let skill of skills" class="font-thin w-fit pointer-events-none">{{skill}}</p>
-</div>
+
+<image-carousel [images]="skills" class="w-full h-full"></image-carousel>

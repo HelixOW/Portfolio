@@ -10,6 +10,7 @@ import { MainCardComponent } from './component/cards/main-card/main-card.compone
 import { PaletteService } from './services/palette.service';
 import { ProjectCardComponent } from './component/cards/project-card/project-card.component';
 import { SkillCardComponent } from './component/cards/skill-card/skill-card.component';
+import { ImageCarouselComponent } from './component/image-carousel/image-carousel.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { SkillCardComponent } from './component/cards/skill-card/skill-card.comp
     MainCardComponent,
     ProjectCardComponent,
     SkillCardComponent,
+    ImageCarouselComponent,
   ],
   imports: [
     BrowserModule,

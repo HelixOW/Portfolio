@@ -1,0 +1,18 @@
+<div class="relative">
+    <div class="w-full h-10 sm:h-12 md:h-24 lg:h-48 xl:h-52 opacity-5 blur-3xl absolute" [style.background]="bg">
+        <img [src]="activeImage.iconURL" [alt]="activeImage.name" class="p-3 w-full h-full" />
+    </div>
+    <div id="carousel-logo">
+        <img [src]="activeImage.iconURL" [alt]="activeImage.name" class="p-3 w-full h-24 lg:h-48 xl:h-52" />
+
+        <h1 class="text-base text-center" [style.background]="bg" [style.-webkit-background-clip]="'text'"
+            [style.-webkit-text-fill-color]="'transparent'">{{activeImage.name}}</h1>
+    </div>
+
+    <button class="absolute top-5 sm:top-6 md:top-12 lg:top-24 xl:top-26 rounded-full border border-white/50 p-2"
+        (click)="prevSlide()">&lt;</button>
+    <button
+        class="absolute right-0 top-5 sm:top-6 md:top-12 lg:top-24 xl:top-26 rounded-full border border-white/50 p-2"
+        (click)="nextSlide()">
+        &gt; </button>
+</div>
